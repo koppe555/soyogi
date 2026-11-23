@@ -1,0 +1,47 @@
+:root {
+  --bg: #F3F5EF;
+  --surface: #FBFCF8;
+  --border: #D9DDD4;
+  --text: #20342E;
+  --muted: #4C6359;
+  --accent: #294C45;
+  --accent-soft: #AFC8B3;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #111D1A;
+    --surface: #1B2B27;
+    --border: #2C3F3A;
+    --text: #E8F0E8;
+    --muted: #B5C7BC;
+    --accent: #AFC8B3;
+    --accent-soft: #3E6A5F;
+  }
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 16px/1.75 -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Segoe UI", sans-serif;
+}
+main { max-width: 680px; margin: 0 auto; padding: 40px 16px 64px; }
+header.brand { display: flex; align-items: center; gap: 14px; margin-bottom: 28px; }
+header.brand img { width: 56px; height: 56px; border-radius: 13px; }
+header.brand a { color: inherit; text-decoration: none; }
+header.brand .name { font-size: 20px; font-weight: 600; }
+header.brand .tag { font-size: 14px; color: var(--muted); }
+h1 { font-size: 28px; line-height: 1.35; margin: 0 0 8px; font-weight: 600; }
+h2 { font-size: 19px; margin: 32px 0 8px; font-weight: 600; }
+p, li { color: var(--text); }
+.muted { color: var(--muted); font-size: 14px; }
+.card { background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 18px 20px; margin: 16px 0; }
+ul { padding-left: 1.2em; }
+a { color: var(--accent); }
+nav.lang { font-size: 14px; margin-bottom: 24px; }
+nav.lang a { margin-right: 12px; }
+footer { margin-top: 48px; font-size: 13px; color: var(--muted); }
+footer a { margin-right: 14px; }
+.hero { font-size: 22px; line-height: 1.5; margin: 8px 0 20px; }
+.features li { margin: 6px 0; }
